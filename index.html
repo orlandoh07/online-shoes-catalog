@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SNKRS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="page-content">
+        <!-- HEADER -->
+        <header class="header">
+            <h1 class="site-title">SNKRS</h1>
+            <p class="site-subtitle">Sneakers essentials</p>
+        </header>
+
+        <!-- PRODUCTS -->
+        <section class="products" id="products-grid"></section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <p>© 2026 SNKRS</p>
+        </footer>
+    </div>
+
+    <!-- MODAL DE PRODUCTO -->
+    <div class="modal-overlay" id="product-modal" aria-hidden="true">
+        <div class="modal-content">
+            <header class="header detail-header">
+                <h2 id="modal-title">Cargando producto...</h2>
+            </header>
+            <section class="product-view-container detail-page">
+                <div class="product-view-image">
+                    <img id="modal-image" src="" alt="">
+                </div>
+                <div class="product-view-info">
+                    <p class="price" id="modal-price"></p>
+                    <div class="size-selector">
+                        <label for="modal-size">TALLA</label>
+                        <select id="modal-size">
+                            <option>7 US</option>
+                            <option>7.5 US</option>
+                            <option>8 US</option>
+                            <option>8.5 US</option>
+                            <option>9 US</option>
+                            <option>9.5 US</option>
+                            <option>10 US</option>
+                            <option>10.5 US</option>
+                            <option>11 US</option>
+                        </select>
+                    </div>
+                    <a href="#" class="product-link whatsapp-btn" target="_blank" rel="noopener noreferrer"
+                        id="modal-whatsapp-link">
+                        CONSULTAR DISPONIBILIDAD
+                    </a>
+                </div>
+                <div id="modal-error" style="display: none; margin-top: 20px; color: #ff4d5a; font-weight: 600;"></div>
+            </section>
+
+            <!-- botón de cerrar (flecha minimalista) centrado debajo del contenido -->
+            <button class="modal-back back-btn" id="modal-close" aria-label="Cerrar detalle"></button>
+
+        </div>
+    </div>
+    <script src="products-data.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
