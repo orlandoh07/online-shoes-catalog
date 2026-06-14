@@ -59,9 +59,6 @@
   function createProductCard(product) {
     const card = document.createElement('div');
     card.className = 'product';
-    if (product.id.includes('yeezy-foam-runner')) {
-      card.classList.add('yeezy');
-    }
 
     const imgContainer = document.createElement('div');
     imgContainer.className = 'img-container';
